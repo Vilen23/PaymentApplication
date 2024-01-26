@@ -35,12 +35,12 @@ export function Signup(){
         {!isvalid && <div className="   text-red-500 pb-2 "> 
                 Invalid Inputs 
             </div>}
-        <div className="h-[600px] w-[400px] bg-white rounded-lg  shadow-lg flex flex-col items-center justify-around py-2">
+        <div className="sm:h-[600px] h-[500px] am:w-[450px] w-[380px] bg-white rounded-lg  shadow-lg flex flex-col items-center justify-around py-2">
         <div className="text-center">
             <p className="font-extrabold text-[40px]">Sign Up</p>
             <p className="text-gray-600">Enter your information to singup</p>
         </div>
-        <div className="flex flex-col w-[350px]">
+        <div className="flex flex-col sm:w-[350px] w-[300px]">
             <label htmlFor="Firstname" className="font-bold pl-1 text-[16px]">Firstname</label>
             <input type="text" placeholder="For eg (Shivam)" id="Firstname" className="pl-2 h-10 rounded-[3px] border-[1px] border-solid border-gray focus:outline-none"
             onChange={(e)=>{
@@ -49,7 +49,7 @@ export function Signup(){
                 setisvalid(true)
             }}/>
         </div>
-        <div className="flex flex-col w-[350px]">
+        <div className="flex flex-col sm:w-[350px] w-[300px]">
             <label htmlFor="Lastname" className="font-bold pl-1 text-[16px]">Lastname</label>
             <input type="text" placeholder="For eg (Lather)" id="Lastname" className="pl-2 h-10 rounded-[3px] border-[1px] border-solid border-gray focus:outline-none"
             onChange={(e)=>{
@@ -58,7 +58,7 @@ export function Signup(){
                 setisvalid(true)
             }}/>
         </div>
-        <div className="flex flex-col w-[350px]">
+        <div className=" flex flex-col sm:w-[350px] w-[300px]">
             <label htmlFor="Email/Username" className="font-bold pl-1 text-[16px]">Email/Usernamee</label>
             <input type="text" placeholder="For eg (abc@gmail.com)" id="Email/Username" className="pl-2 h-10 rounded-[3px] border-[1px] border-solid border-gray focus:outline-none"
             onChange={(e)=>{
@@ -67,7 +67,7 @@ export function Signup(){
                 setisvalid(true)
             }}/>
         </div>
-        <div className="flex flex-col w-[350px]">
+        <div className="flex flex-col sm:w-[350px] w-[300px]">
             <label htmlFor="Password" className="font-bold pl-1 text-[16px]">Password</label>
             <input type="password" placeholder="Password" id="Password" className="pl-2 h-10 rounded-[3px] border-[1px] border-solid border-gray focus:outline-none"
             onChange={(e)=>{
@@ -77,7 +77,7 @@ export function Signup(){
             }}/>
         </div>
         <div>
-            <button className="w-[300px] text-white bg-black h-[45px] font-bold rounded-[10px] text-xl"
+            <button className="sm:w-[300px] w-[250px] text-white bg-black h-[45px] font-bold rounded-[10px] text-xl"
             onClick={HandleSignup}>Signup</button>
         </div>
         <div className="flex justify-around items-center">

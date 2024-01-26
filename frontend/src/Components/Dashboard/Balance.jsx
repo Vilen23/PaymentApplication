@@ -31,8 +31,8 @@ export function Balance() {
   }, [token,success]);
 
   return (
-    <div className="h-[60px] flex items-center pl-[40px] mb-[20px]">
-      <div className="font-bold text-xl">Your Balance is ${balance}</div>
+    <div className="h-[60px] flex items-center sm:pl-[40px]  pl-[20px] mb-[20px]">
+      <div className="font-bold sm:text-2xl text-xl">Your Balance is ${balance}</div>
     </div>
   );
 }
