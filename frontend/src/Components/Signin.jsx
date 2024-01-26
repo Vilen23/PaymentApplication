@@ -40,14 +40,14 @@ export function Signin() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center font-popins">
       {!isvalid && <div className="   text-red-500 pb-2 ">Invalid Inputs or user not found</div>}
-      <div className="h-[500px] w-[450px] bg-white rounded-lg  shadow-lg flex flex-col items-center justify-around py-6">
+      <div className="sm:h-[500px] sm:w-[450px] h-[400px] w-[380px] bg-white rounded-lg  shadow-lg flex flex-col items-center justify-around py-6">
         <div className="text-center">
           <p className="font-extrabold text-[40px] mb-2">Sign In</p>
-          <p className="text-gray-600">
+          <p className="text-gray-600 sm:w-[350px] w-[300px]">
             Enter your credentials to enter your account
           </p>
         </div>
-        <div className="flex flex-col w-[350px]">
+        <div className="flex flex-col sm:w-[350px] w-[300px]">
           <label htmlFor="loginusername" className="font-bold pl-1 text-[16px]">
             Username
           </label>
@@ -64,7 +64,7 @@ export function Signin() {
             }}
           />
         </div>
-        <div className="flex flex-col w-[350px]">
+        <div className="flex flex-col sm:w-[350px] w-[300px]">
           <label htmlFor="loginpassword" className="font-bold pl-1 text-[16px]">
             Password
           </label>
@@ -83,7 +83,7 @@ export function Signin() {
         </div>
         <div>
           <button
-            className="w-[300px] text-white bg-black h-[45px] font-bold rounded-[10px] text-xl"
+            className="sm:w-[300px] w-[250px] text-white bg-black h-[45px] font-bold rounded-[10px] text-xl"
             onClick={HandleSignIn}
           >
             Sign In
